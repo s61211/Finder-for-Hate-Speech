@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Finder for Hate Speech</title>
+	<h1>Finder for Hate </h1>
+    <script src="popup.js"></script>
+	<link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+	<div class="output">
+		<div id="text"></div>
+		<div id="predictionText" class="center resultText"></div>
+		<div id="prediction" class="center response"></div>
+		<div id="probabilityText" class="center resultText"></div>
+		<div id="probability" class="center response"></div>
+		<div id="commentarIDText" class="center resultText"></div>
+		<div id="commentarID" class="center response"></div>
+		<div id="showText"></div>
+		<div id="input" class="center">
+			<div id="inner">
+				<p id="eng" class="language">English</p>
+				<label class="switch">
+					<input type="checkbox" id="languageSelection">
+					<span class="slider round"></span>
+				</label>
+				<p id="de" class="language">Deutsch</p>
+			</div>
+			<div class="center">
+				<button id="send" class="button">Check</button>
+			</div>	
+		</div>
+	</div>
+	<div class="center">
+		<button id="voteHate" class="button vote">Hate</button>
+		<button id="voteNoHate" class="button vote">No Hate</button>
+		<div id="thank"></div>
+	</div>
+  </body>
+</html>

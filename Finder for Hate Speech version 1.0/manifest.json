@@ -1,0 +1,23 @@
+{
+  "name": "Finder for Hate Speech",
+  "description": "Finds Hate Speech",
+  "version": "1.0",
+  "icons": { "16": "icon4.png",
+             "48": "icon4.png",
+             "128": "icon4.png" },
+  "permissions": [
+    "tabs",
+	"activeTab",
+	"contextMenus",
+	"http://*/*",
+	"https://*/*"
+  ],
+  "browser_action": {
+      "default_title": "Finder for Hate Speech",
+      "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["contextMenu.js"]
+  },
+  "manifest_version": 2
+}
